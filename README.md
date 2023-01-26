@@ -1,6 +1,6 @@
 ## Your First Website with Express
 
-This is the repository of a very simple nodejs real project.
+This is the repository of a very simple nodejs real project, the form is working.
 
 ![Screenshot from 2023-01-20 00-35-47](https://user-images.githubusercontent.com/84889339/213625734-82734784-e71c-4719-98bf-294b523d2035.png)
 
@@ -38,3 +38,5 @@ execute the project
 ```sh
 npm run dev
 ```
+you have to change the connection variables to mailtrap.
+

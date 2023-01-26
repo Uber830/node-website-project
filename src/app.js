@@ -16,11 +16,12 @@ app.set("views", join(__dirname, "views"));
 
 /* middleware */
 app.use(morgan("dev"));
+app.use(Express.static(join(__dirname, "public")));
+app.use(Express.urlencoded({ extended: false })); /* for form valids */
+app.use(Express.json());
 
 /* router */
 app.use(route);
-
-app.use(Express.static(join(__dirname, 'public')));
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
